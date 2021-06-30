@@ -1,0 +1,52 @@
+html {
+var(primary-color): #1976D2;
+var(error-color): #FF5252;
+var(info-color): #2196F3;
+var(success-color): #4CAF50;
+var(warning-color): #FFC107;
+var(white-color): white;
+    /*var(text_color): black;*/
+}
+
+
+[color="primary"] {
+    var(bg_color): #1976D2;
+    var(text_color): white;
+    background: var(primary-color,#1976D2);
+    color: white;
+}
+
+[color="error"] {
+var(bg_color): var(error-color, #FF5252);
+var(text_color): white;
+    background: var(error-color, #FF5252);
+    color: white;
+}
+
+[color="info"] {
+   var(bg_color): var(info-color, #2196F3);
+    var(text_color): white;
+    background: var(info-color, #2196F3);;
+    color: white;
+}
+
+[color="success"] {
+    var(bg_color): var(success-color, #4CAF50);
+    var(text_color): white;
+    background: var(success-color, #4CAF50);
+    color: white;
+}
+
+[color="warning"] {
+var(bg_color): var(warning-color, #FFC107);
+var(text_color): white;
+    background: var(warning-color, #FFC107);
+    color: white;
+}
+
+[color="white"] {
+var(bg_color): white;
+var(text_color): rgba(0,0,0,.87);
+    background: var(white-color, white);;
+    color: rgba(0,0,0,.87);
+}

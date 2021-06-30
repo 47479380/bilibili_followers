@@ -1,0 +1,103 @@
+html{
+    width: 770dip;
+    height: 352dip;
+    background: rgba(0,0,0,.4);
+}
+
+body{
+    color: white;
+    font-size: 16dip;
+    padding: 0;
+    margin: 0;
+}
+[widget]{
+    prototype: Widget url(widget.js);
+}
+.icon-svg svg{
+    size: 22dip;
+    color: white;
+}
+.full{
+    size: *;
+}
+.win-btn-group{
+    position: absolute;
+    right: 0;
+    margin-top: 16dip;
+}
+.win-btn-group .icon{
+    behavior:button;
+    cursor: pointer;
+    size: 26dip!important;
+    color: white;
+   margin-right: 14dip;
+}
+.win-btn-group .icon:hover svg,.win-btn-group .icon.active svg{
+    color: #439DFF!important;
+}
+.container{
+    text-align: center;
+    margin: * auto;
+}
+.container .video-toolbar{
+    margin-top: 16dip;
+}
+.container header{
+    flow: vertical;
+    width: *;
+    border-spacing:8dip;
+}
+.center{
+    flow:horizontal;
+}
+.center::before,
+.center::after{
+    width: *;
+}
+.up-name{
+    font-size: 36dip;
+}
+.follow{
+    flow:horizontal;
+    /*text-align: center;*/
+    font-size: 86dip;
+    vertical-align: middle;
+    letter-spacing: -4dip;
+}
+.follow .avatar .icon-svg svg{
+    size: 116dip;
+    color: #0D9EEA;
+}
+.video-info{
+    flow:horizontal;
+}
+.video-info>div{
+    flow:horizontal;
+    /*width: 470dip;*/
+    margin: *;
+
+}
+.video-info .video-title{
+    font-size: 20dip;
+    text-align: center;
+    letter-spacing: 0dip;
+    overflow-x: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+
+}
+.video-info .play-volume{
+    font-size: 20dip;
+}
+.video-toolbar{
+    width: *;
+    flow:grid(1 2 3,
+              4 5 6);
+
+}
+.video-toolbar>div{
+    width: *;
+    font-size: 20dip;
+    margin-top: 20dip;
+    vertical-align: middle;
+}

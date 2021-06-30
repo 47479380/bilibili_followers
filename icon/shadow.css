@@ -1,0 +1,95 @@
+@mixin SHADOW-TRANSITION{
+    transition: box-shadow linear .3s;
+}
+@mixin SHADOW-1{
+    box-shadow: 0 0 2px rgba(0,0,0,0.14), 0 2px 2px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,.2) ;
+}
+@mixin SHADOW-2{
+    box-shadow: 0 0 4px rgba(0,0,0,0.14), 0 3px 4px rgba(0,0,0,0.12),0 1px 5px rgba(0,0,0,.2);
+}
+@mixin SHADOW-3{
+    box-shadow: 0 3px 3px rgba(0,0,0,0.14), 0 3px 4px rgba(0,0,0,0.12),0 1px 8px rgba(0,0,0,.2);
+}
+@mixin SHADOW-4{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.14), 0 4px 5px rgba(0,0,0,0.12),0 1px 10px  rgba(0,0,0,.2);
+
+}
+@mixin SHADOW-6{
+    box-shadow: 0 6px 10px rgba(0,0,0,0.14), 0 1px 18px rgba(0,0,0,0.12),0 3px 5px  rgba(0,0,0,.2);;
+
+}
+@mixin SHADOW-8{
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 3px rgba(0,0,0,0.12),0 4px 15px  rgba(0,0,0,.2);;
+
+}
+@mixin SHADOW-9{
+    box-shadow: 0 9px 12px 1px rgba(0,0,0,0.14), 0 3px 16px 2px rgba(0,0,0,0.12),0 5px 6px  rgba(0,0,0,.2);;
+
+}
+
+@mixin SHADOW-12{
+    box-shadow: 0 12px 17px 2px rgba(0,0,0,0.14), 0 5px 22px 4px rgba(0,0,0,0.12),0 7px 8px  rgba(0,0,0,.2);;
+
+}
+
+@mixin SHADOW-16{
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px  rgba(0,0,0,.2);;
+
+}
+
+@mixin SHADOW-24{
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12),0 11px 15px  rgba(0,0,0,.2);;
+
+}
+
+@mixin SHADOW-0{
+    box-shadow: none;
+}
+
+.shadow-0{
+    @SHADOW-0;
+    @SHADOW-TRANSITION;
+}
+.shadow-1 {
+   @SHADOW-1;
+@SHADOW-TRANSITION;
+}
+.shadow-2 {
+    @SHADOW-2;
+@SHADOW-TRANSITION;
+}
+.shadow-3 {
+    @SHADOW-3;
+@SHADOW-TRANSITION;
+}
+.shadow-4 {
+    @SHADOW-4;
+@SHADOW-TRANSITION;
+}
+.shadow-6 {
+    @SHADOW-6;
+@SHADOW-TRANSITION;
+}
+.shadow-8 {
+ @SHADOW-8;
+@SHADOW-TRANSITION;
+}
+.shadow-9 {
+   @SHADOW-9;
+@SHADOW-TRANSITION;
+}
+.shadow-12 {
+@SHADOW-12;
+@SHADOW-TRANSITION;
+}
+.shadow-16 {
+@SHADOW-16;
+@SHADOW-TRANSITION;
+}
+.shadow-24 {
+@SHADOW-24;
+@SHADOW-TRANSITION;
+}
+/*[Elevation]{*/
+/*    aspect: Elevation url(shadow.js);*/
+/*}*/

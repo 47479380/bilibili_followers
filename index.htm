@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html  window-resizable="false">
+<head>
+    <meta charset="UTF-8">
+    <title>b站粉丝数实时查看器</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+
+    </script>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="btn-group">
+    <button class="btn" value="name">昵称</button>
+    <button class="btn" value="id">ID号</button>
+    </div>
+    <div class="up-id-input">
+        <input placeholder="输入名称" type="text">
+    </div>
+    <div class="submit-btn">
+        <button class="btn">打开该UP主的实时粉丝挂件
+        </button>
+    </div>
+</div>
+
+<script type="module">
+
+
+
+     import {getCentered} from "./centered.js";
+
+     let view=Window.this;
+     let [x,y]=getCentered()
+    view.move(x,y,314,280)
+
+     // view.move(x,y)
+
+</script>
+</body>
+</html>

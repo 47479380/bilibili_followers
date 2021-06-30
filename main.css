@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+   margin: 0;
+    padding: 0;
+    font-size: 14dip;
+    overflow: hidden;
+    color: #686769;
+
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+.container{
+    width: 308dip;
+    height: 240dip;
+    width: max-content;
+    margin: *;
+    prototype: Main url(main.js);
+}
+.btn{
+    width: 70dip;
+    height: 40dip;
+    box-sizing: border-box;
+    border-radius: 2px;
+    display:inline-block;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #DEDDE0;
+    vertical-align: middle;
+    line-height: 40dip;
+    color: inherit;
+    font-size: inherit;
+    transition: color linear .1s,
+                 background-color linear .1s;
+}
+
+.container>div{
+    margin-top: 24dip;
+}
+
+.btn-group{
+    flow:horizontal;
+    text-align: center;
+    width: max-content;
+    margin: 0 *;
+}
+.btn-group .btn{
+    margin: 0;
+    border-radius: 0;
+    border-left-width: 1dip;
+    border-right-width: 0;
+}
+.btn-group .btn:first-child{
+    border-top-left-radius: 2dip;
+    border-bottom-left-radius: 2dip;
+}
+.btn-group .btn:last-child{
+    border-right-width: 1dip;
+    border-top-right-radius: 2dip;
+    border-bottom-right-radius: 2dip;
+}
+.btn-group .btn:current{
+    color: white;
+    background: #439DFF;
+   border-color: #439DFF;
+}
+
+.up-id-input input{
+   width: 212dip;
+    height: 40dip;
+    font-size: 16dip;
+    color: rgba(112, 109, 111,.8);
+    padding: 0 16dip;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 2px;
+    border-color: #DEDDE0;
+    background:none;
+}
+.up-id-input input:focus{
+    border-color: #439DFF;
+}
+.submit-btn .btn{
+    color: #7A97C5;
+    width: *;
+    background-color: #E1F6FF;
+}
+
+.submit-btn .btn:active{
+    border-color: #439DFF;
+    color: white;
+    background-color: #439DFF;
+}

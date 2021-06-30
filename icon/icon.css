@@ -1,0 +1,40 @@
+@import "color.css";
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+svg{
+    background: transparent;
+}
+svg path{
+
+    fill: currentColor;
+}
+.spacer{
+    width: 1*;
+}
+
+.icon,.icon::before,.icon::after{
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    letter-spacing: normal;
+    line-height: 1;
+    font-size: 20px;
+    color: rgba(0,0,0,.54);
+    position: relative;
+    /*background: black;*/
+}
+
+/*.icon-svg{*/
+/*  size: 20px;*/
+/*}*/
+.icon svg{
+    size: 20px;
+}
+[icon]{
+    prototype: Icon url(icon.js);
+
+}

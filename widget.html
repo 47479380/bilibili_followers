@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" window-frame="transparent">
+<head>
+    <meta charset="UTF-8">
+    <title>b站粉丝数实时查看器</title>
+    <link rel="stylesheet" href="icon/icon.css">
+    <link rel="stylesheet" href="widget.css">
+</head>
+<body widget role=window-caption>
+
+<div class="win-btn-group">
+    <i class="expansion" icon>expansion</i>
+    <i class="top" icon>top</i>
+    <i class="locking" icon>locking</i>
+    <i role=window-close icon>window-close</i>
+</div>
+
+<div class="container">
+    <header>
+        <div class="up-name">
+            永恒的小黑屋
+        </div>
+        <div class="follow center">
+            <div class="avatar">
+                <i icon>bilibili</i>
+            </div>
+            <div class="follow-number"></div>
+        </div>
+        <div class="video-info center">
+           <div>
+               <div class="video-title">
+
+               </div>
+               <div class="play-volume">
+                   <i icon>play</i><span></span>
+               </div>
+           </div>
+        </div>
+    </header>
+    <div class="video-toolbar center" >
+        <div class="like">
+            <i icon>like</i>
+            <span></span>
+        </div>
+        <div class="coin">
+            <i icon>coin</i>
+            <span></span>
+        </div>
+        <div class="collect">
+            <i icon>collect</i>
+            <span></span>
+        </div>
+        <div class="comment">
+            <i icon>comment</i>
+            <span></span>
+        </div>
+        <div class="barrage">
+            <i icon>barrage</i>
+            <span></span>
+        </div>
+        <div class="share">
+            <i icon>share</i>
+            <span></span>
+        </div>
+    </div>
+</div>
+<script>
+    let view = Window.this;
+    view.maxSize = [770, 352]
+</script>
+</body>
+</html>
