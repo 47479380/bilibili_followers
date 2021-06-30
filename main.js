@@ -3,6 +3,7 @@ import {Component} from "./component";
 export class Main extends Component{
 
     _ready;
+
     render() {
 
         this.querySelector(".btn-group .btn:first-child").state.current=true
@@ -21,17 +22,22 @@ export class Main extends Component{
         }
     }
 
-    ["on click at .submit-btn .btn"](evt,btn){
-      let current_btn= document.querySelector(".btn-group .btn:current")
-        if (current_btn.getAttribute("value")==="name") {
-           this.winConfig.parameters={ID:this.findIdByName()}
-        }else {
-            this.winConfig.parameters={
-                ID:this.input.value
-            }
-            new Window(this.winConfig)
-        }
+    async ["on click at .submit-btn .btn"](evt, btn) {
+        let current_btn = document.querySelector(".btn-group .btn:current")
+        if (current_btn.getAttribute("value") === "name") {
+            let uid = await this.findIdByName()
 
+            this.winConfig.parameters = {
+                ID: uid
+            }
+
+        } else {
+            this.winConfig.parameters = {
+                ID: this.input.value
+            }
+
+        }
+        new Window(this.winConfig)
     }
     ["on click at .btn-group .btn"](evt, button){
         button.state.current=true
@@ -57,9 +63,9 @@ export class Main extends Component{
                 return
             }
             let href=a.getAttribute("href")
-            let url=href.split("/")[3].split("?")[0]
-            console.log(url);
-            return
+            let id=href.split("/")[3].split("?")[0]
+
+            return id
         }
         Window.this.modal(<error>api访问失败</error>)
     }
